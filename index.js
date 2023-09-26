@@ -79,9 +79,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const change2ndA = document.getElementById("myAnchor");
 
         change2ndA.style.color = "red";
-        header.style.backgroundColor = "lightgray";
+        header.style.backgroundColor = "#F5E0FA";
         footer.style.backgroundColor = "white";
-        header.style.color = "black";
+        // header.style.color = "black";
         footer.style.color = "black";
 
 

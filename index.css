@@ -102,13 +102,7 @@ height: 100px;
     justify-content: center;
     
 }
-/* .row{
-    align-items: center;
-    justify-content: center;
-    
-    
 
-} */
 .notification_div{
     align-items: center;border: 1px solid purple;
   margin-left: 100px;margin-right: 50px;padding: 15px;border-radius: 10px;
@@ -132,7 +126,7 @@ header span{
 }
  footer {
     background-color: white;
-    
+    font-weight: 600;
     text-align: center;
     bottom: 0;
     padding: 2px 0;
@@ -303,7 +297,7 @@ header span{
     z-index: 1;
     cursor:pointer;
   }
-
+  
 
   
   
