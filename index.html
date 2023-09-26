@@ -27,11 +27,21 @@
 
     <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 
+<div id="google_element" style="display: none;"> </div>
     <script>
+                
 
         function loadGoogleTranslate() {
             new google.translate.TranslateElement("google_element");
         }
+
+
+        function checkAlert(evt) {
+  if (evt.target.value === "Hindi") {
+    // alert('Hello');
+    document.getElementById("google_element").style.display="block"
+  }
+}
     </script>
 
 
@@ -60,16 +70,15 @@
                 <span id="changeColorButton" style="background-color: black;  padding: 5px;height: 32px">
                     <a id="myAnchor" href="#A" style="text-decoration: none;color: white;">A</a></span>
                 
-                <div id="google_element"> </div>
 
-                <!-- <span>
-                    <Select style="width: 150px;" id="select_element">
-                        <option>Select Language</option>
-                        <option>Hindi</option>
-                        <option>Marathi</option>
+                <span>
+                    <Select onchange="checkAlert(event)" style="width: 150px;" id="select_element">
+                        <option value="SelectLanguage">Select Language</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Marathi">Marathi</option>
 
                     </Select>
-                </span> -->
+                </span>
                 <span style="margin-right: 80px;">
                     <button id="signInBtn" ondblclick="backToSignIn()" onclick="goTosignIN()" class="signin">Sign
                         In</button></span>
