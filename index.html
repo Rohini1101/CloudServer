@@ -64,23 +64,23 @@
                 <span onclick="clicktoOriginal()" class="mt-1"><a href="#A" id="achorTag">A</a></span>
                 <span onclick="clicktoZoomOut()" class="mt-1"><a href="#A+" id="achorTag">A+</a></span>
 
-                <span id="changeColorToOriginal" style="background-color: white; padding: 5px;height: 32px">
+                <span id="changeColorToOriginal" class="mt-1" style="background-color: white; padding: 1px;height:21px">
                     <a href="#A" style=" text-decoration: none;color: black; ">A</a></span>
 
-                <span id="changeColorButton" style="background-color: black;  padding: 5px;height: 32px">
+                <span id="changeColorButton" class="mt-1" style="background-color: black;  padding: 1px;height: 21px">
                     <a id="myAnchor" href="#A" style="text-decoration: none;color: white;">A</a></span>
                 
 
                 <span>
-                    <Select onchange="checkAlert(event)" style="width: 150px;" id="select_element">
+                    <Select onchange="checkAlert(event)" style="width: 150px;">
                         <option value="SelectLanguage">Select Language</option>
                         <option value="Hindi">Hindi</option>
                         <option value="Marathi">Marathi</option>
 
                     </Select>
                 </span>
-                <span style="margin-right: 80px;">
-                    <button id="signInBtn" ondblclick="backToSignIn()" onclick="goTosignIN()" class="signin">Sign
+                <span>
+                    <button id="signInBtn" onclick="goTosignIN()" class="signin">Sign
                         In</button></span>
 
 
@@ -105,320 +105,15 @@
                 </span>
             </div>
             <div class="col-md-2 col-sm-12 " style="height: 100px;">
-                <span><img src="images/savitri.png" style="height: 115%;width: 125%;"></span>
+                <span><img src="images/savitri.png" style="height: 100%;width: 125%;"></span>
             </div>
 
         </div>
 
         <!-- //Login Section         -->
-        <div id="loginForm" class="login_section" style="display: none;">
-            <div id="loginForm1" class="login_form login_sign mt-5"
-                style="background-color: lightgray;border: 1px solid gray;display: none;">
-                <div class="form_title">
-                    <h5 style="font-size: 14px;
-                     color: rgb(0, 0, 0);">Login</h5>
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <p id="errorName" style="margin-bottom: 0px;color: red;"></p>
-                            <input onclick="eraseInput()" type="text" id="userID" name="userID"
-                                placeholder="Enter Email" class="form-control"></input>
-                        </div>
-
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <p id="errorpswd" style="margin-bottom: 0px;color: red;"></p>
-
-
-                            <input id="userPassword" onclick="erasePassword()" type="password" name="password"
-                                placeholder="Enter password" class="password form-control">
-                            <span class="p-viewer">
-                                <i class="bi bi-eye-slash"></i>
-
-                            </span>
-                        </div>
-
-                    </div>
-
-                    <div class="button_group text-center">
-                        <button onclick="loginUser()">Login</button>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-6 login_links" style="cursor: pointer;">
-                            <a href="#CreateNewAccount" style="text-decoration: none;color: black;">
-                                <h6 onclick="createAcc()">Create New Account</h6>
-                            </a>
-                        </div>
-
-                        <div class="col-6 login_links" style="cursor: pointer;">
-                            <a href="#ForgotPassword?" onclick="forgotPassword()"
-                                style="text-decoration: none;color: black;">
-                                <h6>Forgot Password?</h6>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- FOrgot Password -->
-        <div id="forgotpswdSection" class="login_section" style="display: none;">
-            <div class="login_form" style="background-color: lightgray;border: 1px solid gray;">
-                <div style="text-align: end;cursor: pointer;">
-                    <a href="#login">
-                        <i class="bi bi-arrow-left" onclick="backToLogin()" title="Go to back" style="color: black;
-                        font-size: 25px;font-weight: bold;"></i>
-
-                        </i>
-                    </a>
-                </div>
-                <div class="form_title">
-                    <h5 style="font-size: 14px;color: rgb(0, 0, 0);">Forgot Password</h5>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-12">
-                        <input onkeypress="clearIdField()" type="text" id="confirmID" type="text"
-                            placeholder="Enter Email" class="form-control">
-                        <p id="ID1" style="margin-bottom: 0px;color: red;"></p>
-
-                        </input>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-12">
-
-                        <input id="confirmPswd" onkeypress="clearPswdField()" type="password"
-                            placeholder="Enter New PAssword" class="password form-control"></input>
-                        <p id="CPswd1" style="margin-bottom: 0px;color: red;"></p>
-                        <span class="p-viewer">
-                            <!-- <i class="bi bi-eye-slash"></i> -->
-                            <!-- <i class="bi bi-eye-slash-fill"></i> -->
-
-                        </span>
-
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-12">
-
-                        <input id="confirmPswd1" onkeypress="clearPswdField1()" type="password"
-                            placeholder="Confirm Password" class="password form-control"></input>
-                        <p id="CPswd2" style="margin-bottom: 0px;color: red;"></p>
-                        <span class="p-viewer">
-                            <i class="bi bi-eye-slash-fill"></i>
-
-                        </span>
-
-                    </div>
-                </div>
-                <div class="button_group text-center">
-                    <button onclick="OTPsend()">Reset</button>
-                </div>
-
-
-            </div>
-
-        </div>
-
-
-        <!-- Loader 02 -->
-        <div id="loader1" class="text-center text-primary" style="display: none;">
-            <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
-                <!-- <span class="sr-only">Loading...</span> -->
-            </div>
-        </div>
-
-
-        <div id="myModal3" class="modal2">
-            <div class="modal-content2" style="text-align: center;">
-                <span style="color: red;">
-                    <i style="font-size: 60px;" class="bi bi-x-circle"></i>
-                </span>
-                <p style="color:gray;font-size: 20px;">Invalid User Name,User Does not Exist</p>
-                <button onclick="okToInvalidData()" style="border: none;width: 20%;border-radius: 15px;color: white;height: 20%;background-color: lightskyblue;
-            font-weight: bold;">
-                    OK</button>
-            </div>
-        </div>
-
-
-
-
-
-        <!-- loader -->
-        <div id="loader" class="text-center text-primary" style="display: none;">
-            <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
-                <!-- <span class="sr-only">Loading...</span> -->
-            </div>
-        </div>
-
-
-        <div id="myModal2" class="modal2">
-            <div class="modal-content2" style="text-align: center;">
-                <span style="color: red;">
-                    <i style="font-size: 60px;" class="bi bi-x-circle"></i>
-                </span>
-                <p style="color:gray;font-size: 20px;">Invalid Credentials,User Does not Exist</p>
-                <button onclick="okToInvalid()" style="border: none;width: 20%;border-radius: 15px;color: white;height: 20%;background-color: lightskyblue;
-            font-weight: bold;">
-                    OK</button>
-            </div>
-        </div>
-
         <!-- Hide Registration Section -->
-        <div id="registration_form" class="registration_form" style="display: none;">
-            <div class="form_title">
-                <h5 style="font-size: 14px;color: rgb(0, 0, 0);">Registration</h6>
-
-            </div>
-            <div class="row mb-3">
-                <div class="col-6">
-                    <input id="schoolName1" onkeypress="changeFields()" type="text" class="form-control"
-                        placeholder="Enter Institute/ School Name">
-                    <p id="schoolName" style="color: red;margin-bottom: 0px;"></p>
-                </div>
-                <div class="col-6">
-                    <input id="applicantName1" onkeypress="changeFields1()" type="text" class="form-control"
-                        placeholder="Enter Applicant Name">
-                    <p id="applicantName" style="color: red;margin-bottom: 0px;"></p>
-
-
-                </div>
-
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-6">
-                    <textarea id="address1" onkeypress="changeFields2()" class="form-control" style="min-height: 75px;"
-                        cols="7" rows="3" placeholder="Enter Address..."></textarea>
-                    <p id="address" style="color: red;margin-bottom: 0px;"></p>
-
-                </div>
-                <div class="col-6">
-                    <input id="mobile1" onkeypress="changeFields3()" type="text" class="form-control mb-1"
-                        placeholder="Enter Mobile No.">
-                    <p id="mobile" style="color: red;margin-bottom: 0px;"></p>
-
-                    <input id="landMark1" onkeypress="changeFields4()" type="text" class="form-control"
-                        placeholder="Enter Landmark">
-                    <p id="landMark" style="color: red;margin-bottom: 0px;"></p>
-
-                </div>
-
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-6">
-                    <input id="city1" onkeypress="changeFields5()" type="text" class="form-control"
-                        placeholder="Enter City/Village Name">
-                    <p id="city" style="color: red;margin-bottom: 0px;"></p>
-
-                </div>
-                <div class="col-6">
-                    <input id="pinCode1" onkeypress="changeFields6()" type="text" class="form-control mb-1"
-                        placeholder="Enter Pin Code">
-                    <p id="pinCode" style="color: red;margin-bottom: 0px;"></p>
-
-                </div>
-
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-6">
-                    <input id="enterEmail1" onkeypress="changeFields7()" type="email" class="form-control"
-                        placeholder="Enter Email">
-                    <p id="enterEmail" style="color: red;margin-bottom: 0px;"></p>
-
-
-                </div>
-                <div class="col-6">
-                    <input id="enterPassword1" onkeypress="changeFields8()" type="text" class="form-control mb-1"
-                        placeholder="Enter Password">
-                    <span class="p-viewer">
-                        <i class="bi-eye"></i>
-
-                    </span>
-                    <p id="enterPassword" style="color: red;margin-bottom: 0px;"></p>
-
-                </div>
-
-            </div>
-            <h6 style="font-size: 13px;color: rgb(0, 0, 0);">Bank Details</h6>
-            <div class="row mt-2 mb-3">
-                <div class="col-6"><input id="accHolderName1" onkeypress="changeFields9()" type="text"
-                        class="form-control" placeholder="Enter Account Holder Name">
-                    <p id="accHolderName" style="color: red;margin-bottom: 0px;"></p>
-                </div>
-                <div class="col-6"><input type="text" onkeypress="changeFields10()" id="accNo1" class="form-control"
-                        placeholder="Enter Account Number">
-                    <p id="accNo" style="color: red;margin-bottom: 0px;"></p>
-                </div>
-
-            </div>
-            <div class="row mb-3">
-                <div class="col-6"><input id="IFSC1" onkeypress="changeFields11()" type="text" class="form-control"
-                        placeholder="Enter IFSC Code">
-                    <p id="IFSC" style="color: red;margin-bottom: 0px;"></p>
-                </div>
-                <div class="col-6"><input id="BranchName1" onkeypress="changeFields12()" type="text"
-                        class="form-control" placeholder="Enter Branch Name">
-                    <p id="BranchName" style="color: red;margin-bottom: 0px;"></p>
-                </div>
-
-            </div>
-            <div class="mt-2 button_group text-center"><button onclick="register()" id="registerBtn">Register</button>
-            </div>
-            <div class="row mt-4">
-                <div class="col-6 login_links" style="cursor: pointer;">
-                    <a href="#alreadyRegister" onclick="alreadyReg()">
-                        <h6>Already Register?</h6>
-                    </a>
-                </div>
-                <div class="col-6 login_links" style="cursor: pointer;text-align: end;">
-                    <a href="#signIn" onclick="signIn()">
-                        <h6>Sign In</h6>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div id="loader" class="text-center text-primary" style="display: none;">
-            <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
-                <!-- <span class="sr-only">Loading...</span> -->
-            </div>
-        </div>
-
-        <div id="myModalRegister" class="modal1">
-            <div class="modal-content1" style="text-align: center;">
-                <!-- <span class="close" onclick="closeModal()">&times;</span> -->
-                <!-- <img src="images/icons8-tick.gif" alt=""></img> -->
-                <p style="color: green;">Email ID is Already Register With Us</p>
-                <button onclick="closeModalRegister()"
-                    style="border: none;width: 100px;border-radius: 15px;color: green;font-weight: bold;">OK</button>
-            </div>
-        </div>
-
-
-        <div id="myModal4" class="modal2">
-            <div class="modal-content2" style="text-align: center;">
-                <span style="color: green;">
-                    <img src="images/icons8-tick.gif" style="margin-bottom: 25px;" alt=""></img>
-
-                    <!-- <i style="font-size: 60px;" class="bi bi-x-circle"></i> -->
-                </span>
-                <p style="color:gray;font-size: 20px;margin-bottom:40px">User Registration Successful !</p>
-                <button onclick="closeRegistration()" style="border: none;width: 20%;border-radius: 15px;color: white;height: 20%;background-color: lightskyblue;
-            font-weight: bold;">
-                    OK</button>
-            </div>
-        </div>
-
-
-
-
+        
         <!-- Nabar Content -->
         <div id="navbarContent" style="width: 100%;">
 

@@ -57,8 +57,14 @@ table{
 }
 
 .signin{
-    border-radius: 25px;border: none;background-color: #4B134F;color: white;
-    height:25px;width: 80px;
+    border-radius: 25px;
+    border: none;
+    background-color: #4B134F;
+    color: white;
+    height:23px;
+    width: 80px;
+    padding: 0px 6px 3px 6px;
+    margin: 2px 80px 0px 4px;
 }
 .img_div{
 height: 100px;
@@ -283,11 +289,15 @@ header span{
     border-radius: 0.5rem;
     margin: auto;
     width: 50%;
-    height: 95vh;
+    /* height: 95vh; */
     overflow-y: auto;
     padding: 1% 2%;
-    border: 2px solid gray;
-    background-color: lightgray;
+   
+
+    height: 72vh;
+    /* overflow-y: auto; */
+    padding: 1% 2%;
+    background-color: #F5E0FA;border: 1px solid #F2D6F9;
 }
 .p-viewer{
     float: right;
@@ -297,7 +307,20 @@ header span{
     z-index: 1;
     cursor:pointer;
   }
-  
+  .form_section {
+    align-items: center;
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    overflow-y: auto;
+    width: 100% ;
+
+}
+.main_header_right {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
   
   

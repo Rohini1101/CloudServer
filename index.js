@@ -11,7 +11,154 @@ function clicktoOriginal() {
 function clicktoZoomOut() {
     document.getElementById("text_design").style.fontSize = "2.5rem";
     document.getElementById("footer").style.fontSize = "18px"
+    
 }
+
+function original(){
+    // alert("hello")
+ document.getElementById("headerSection").style.backgroundColor = "#F5E0FA";
+ document.getElementById("footerSection").style.backgroundColor = "white";
+ document.getElementById("footerSection").style.color = "black";
+ document.getElementById("header2_section").style.backgroundColor = "white";
+ document.getElementById("header2_section").style.color = "black";
+
+ document.getElementById("loginForm").style.backgroundColor = "white";
+ document.getElementById("loginForm1").style.backgroundColor = "#F5E0FA";
+ document.getElementById("loginForm1").style.border = "1px solid #F2D6F9";
+ document.getElementById("h5Title").style.color = "black"
+ document.getElementById("h6Title").style.color = "black"
+ document.getElementById("h7Title").style.color = "black"
+var anchorElements = document.getElementsByTagName("a");
+        var newTextColor = "black";
+
+        for (var i = 0; i < anchorElements.length; i++) {
+            anchorElements[i].style.color = newTextColor;
+        }
+
+}
+function duplicate(){
+    document.getElementById("headerSection").style.backgroundColor = "#3C3C3C";
+    document.getElementById("footerSection").style.backgroundColor = "#3C3C3C";
+    document.getElementById("footerSection").style.color = "white";
+    document.getElementById("footerSection").style.borderTop = "1px solid white"
+ document.getElementById("header2_section").style.backgroundColor = "#3C3C3C";
+ document.getElementById("header2_section").style.color = "whitesmoke";
+ document.getElementById("header2_section").style.borderBottom = "1px solid white";
+ document.getElementById("loginForm").style.backgroundColor = "#3C3C3C";
+ document.getElementById("loginForm1").style.backgroundColor = "#3C3C3C";
+ document.getElementById("loginForm1").style.border = "1px solid #F2D6F9";
+ document.getElementById("h5Title").style.color = "white"
+ document.getElementById("h6Title").style.color = "white"
+ document.getElementById("h7Title").style.color = "white"
+
+
+ var anchorElements = document.getElementsByTagName("a");
+    var newTextColor = "white";
+
+    for (var i = 0; i < anchorElements.length; i++) {
+        anchorElements[i].style.color = newTextColor;
+    }
+}
+
+// registration section
+function original1(){
+ document.getElementById("headerSection").style.backgroundColor = "#F5E0FA";
+ document.getElementById("footerSection").style.backgroundColor = "white";
+ document.getElementById("footerSection").style.color = "black";
+ document.getElementById("header2_section").style.backgroundColor = "white";
+ document.getElementById("header2_section").style.color = "black";
+ document.getElementById("form_section").style.backgroundColor = "white";
+ document.getElementById("registration_form").style.backgroundColor = "#F5E0FA";
+ document.getElementById("regId").style.color = "black";
+ document.getElementById("bankdet").style.color = "black";
+
+var anchorElements = document.getElementsByTagName("a");
+        var newTextColor = "black";
+
+        for (var i = 0; i < anchorElements.length; i++) {
+            anchorElements[i].style.color = newTextColor;
+        }
+
+}
+function duplicate1(){
+    document.getElementById("headerSection").style.backgroundColor = "#3C3C3C";
+    document.getElementById("footerSection").style.backgroundColor = "#3C3C3C";
+    document.getElementById("footerSection").style.color = "white";
+    document.getElementById("footerSection").style.borderTop = "1px solid white"
+ document.getElementById("header2_section").style.backgroundColor = "#3C3C3C";
+ document.getElementById("header2_section").style.color = "whitesmoke";
+ document.getElementById("header2_section").style.borderBottom = "1px solid white";
+ document.getElementById("form_section").style.backgroundColor = "#3C3C3C";
+ document.getElementById("registration_form").style.backgroundColor = "#3C3C3C";
+ document.getElementById("regId").style.color = "white";
+ document.getElementById("bankdet").style.color = "white";
+
+ document.getElementById("form_section").style.backgroundColor = "#3C3C3C";
+ var anchorElements = document.getElementsByTagName("a");
+    var newTextColor = "white";
+
+    for (var i = 0; i < anchorElements.length; i++) {
+        anchorElements[i].style.color = newTextColor;
+    }
+}
+
+function original2(){
+// alert("hi")
+document.getElementById("headerSection").style.backgroundColor = "#F5E0FA";
+ document.getElementById("footerSection").style.backgroundColor = "white";
+ document.getElementById("footerSection").style.color = "black";
+ document.getElementById("header2_section").style.backgroundColor = "white";
+ document.getElementById("header2_section").style.color = "black";
+
+ 
+ document.getElementById("forgotpswdSection").style.backgroundColor = "white";
+ document.getElementById("login_form").style.border ="1px solid #F2D6F9";
+ document.getElementById("login_form").style.backgroundColor ="#F5E0FA";
+ document.getElementById("forgetPassword").style.color = "black";
+ document.getElementById("arrowIcon").style.color ="black";
+
+ var anchorElements = document.getElementsByTagName("a");
+        var newTextColor = "black";
+
+        for (var i = 0; i < anchorElements.length; i++) {
+            anchorElements[i].style.color = newTextColor;
+        }
+}
+
+function duplicate2(){
+    // alert("hi")
+    document.getElementById("headerSection").style.backgroundColor = "#3C3C3C";
+    document.getElementById("footerSection").style.backgroundColor = "#3C3C3C";
+    document.getElementById("footerSection").style.color = "white";
+    document.getElementById("footerSection").style.borderTop = "1px solid white"
+ document.getElementById("header2_section").style.backgroundColor = "#3C3C3C";
+ document.getElementById("header2_section").style.color = "whitesmoke";
+ document.getElementById("header2_section").style.borderBottom = "1px solid white";
+
+ document.getElementById("forgotpswdSection").style.backgroundColor = "#3C3C3C";
+ document.getElementById("login_form").style.border ="1px solid white";
+ document.getElementById("login_form").style.backgroundColor ="#3C3C3C";
+ document.getElementById("forgetPassword").style.color = "white";
+ document.getElementById("arrowIcon").style.color ="white";
+
+
+
+ var anchorElements = document.getElementsByTagName("a");
+    var newTextColor = "white";
+
+    for (var i = 0; i < anchorElements.length; i++) {
+        anchorElements[i].style.color = newTextColor;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -78,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
     changeColorToOriginal.addEventListener("click", function () {
         const change2ndA = document.getElementById("myAnchor");
 
-        change2ndA.style.color = "red";
+        change2ndA.style.color = "black";
         header.style.backgroundColor = "#F5E0FA";
         footer.style.backgroundColor = "white";
         // header.style.color = "black";
@@ -187,51 +334,16 @@ function clearText() {
 
 
 function goTosignIN() {
-    document.getElementById("registration_form").style.display = "none";
-    document.getElementById("navbarContent").style.display = "none";
-    document.getElementById("carousal_02").style.display = "none";
-    document.getElementById("gallarySection").style.display = "none";
-    document.getElementById("about_section1").style.display = "none";
-    document.getElementById("caroural_2").style.display = "none";
-    document.getElementById("otherScheme").style.display = "none";
-    document.getElementById("feedbackForm").style.display = "none";
-    document.getElementById("header2_section").style.borderBottom = "1px solid lightgray"
-    document.getElementById("signInBtn").innerText = "Back"
-
-    document.getElementById("loginForm").style.display = "block"
-    document.getElementById("loginForm1").style.display = "block"
-
-
-
+location.href = "login.html";
 }
 
 function backToSignIn() {
-    document.getElementById("registration_form").style.display = "none";
-    document.getElementById("forgotpswdSection").style.display = "none"
-
-    document.getElementById("navbarContent").style.display = "block";
-    document.getElementById("carousal_02").style.display = "block";
-    document.getElementById("gallarySection").style.display = "block";
-    document.getElementById("gallarySection").style.display = "flex";
-
-    document.getElementById("about_section1").style.display = "block";
-    document.getElementById("about_section1").style.display = "flex";
-
-    document.getElementById("caroural_2").style.display = "block";
-    document.getElementById("otherScheme").style.display = "block";
-    document.getElementById("feedbackForm").style.display = "block";
-    document.getElementById("header2_section").style.borderBottom = "1px solid lightgray"
-    document.getElementById("signInBtn").innerText = "Sign In"
-
-    document.getElementById("loginForm").style.display = "none"
-    document.getElementById("loginForm1").style.display = "none"
-
-
+    location.href = "Index.html"
 }
 
 
 function loginUser() {
-    document.getElementById("forgotpswdSection").style.display = "none";
+    // document.getElementById("forgotpswdSection").style.display = "none";
     var userId = document.getElementById("userID").value;
     var userPassword = document.getElementById("userPassword").value;
 
@@ -332,26 +444,24 @@ function okToInvalid() {
 }
 
 function createAcc() {
-    document.getElementById("loginForm").style.display = "none"
-    document.getElementById("loginForm1").style.display = "none";
-    document.getElementById("registration_form").style.display = "block"
+location.href = "registration.html"
 }
 
-function alreadyReg() {
-    document.getElementById("registration_form").style.display = "none";
-    document.getElementById("loginForm").style.display = "block";
-    document.getElementById("loginForm1").style.display = "block"
+// function alreadyReg() {
+//     document.getElementById("registration_form").style.display = "none";
+//     document.getElementById("loginForm").style.display = "block";
+//     document.getElementById("loginForm1").style.display = "block"
 
 
-}
+// }
 
-function signIn() {
-    document.getElementById("registration_form").style.display = "none";
-    document.getElementById("loginForm").style.display = "block";
-    document.getElementById("loginForm1").style.display = "block"
+// function signIn() {
+//     document.getElementById("registration_form").style.display = "none";
+//     document.getElementById("loginForm").style.display = "block";
+//     document.getElementById("loginForm1").style.display = "block"
 
 
-}
+// }
 
 
 
@@ -523,15 +633,11 @@ function closeRegistration() {
 
 
 function forgotPassword() {
-    document.getElementById("forgotpswdSection").style.display = "block";
-    document.getElementById("loginForm").style.display = "none";
-    document.getElementById("loginForm1").style.display = "none";
+    location.href = "forgetpaswd.html"
 }
 
 function backToLogin() {
-    document.getElementById("forgotpswdSection").style.display = "none";
-    document.getElementById("loginForm").style.display = "block";
-    document.getElementById("loginForm1").style.display = "block";
+    location.href= "login.html"
 }
 
 
